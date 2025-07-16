@@ -49,3 +49,26 @@ class Solution {
         
     }
 }
+
+/* */
+/*Input : n = 200
+Output: 2
+Explanation: By reversing the digits of number, number will change into 2. */
+
+class Solution {
+    public int reverseDigits(int n) {
+        int N=n;
+        int rev=0;
+        int rem;
+        while(n>0)
+        {
+            rem=n%10;
+            if(rem!=0)
+            {
+                rev=rev*10+rem;
+            }
+            n=n/10;
+        }
+        return rev;
+    }
+}
