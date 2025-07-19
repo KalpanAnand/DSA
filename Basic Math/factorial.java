@@ -12,6 +12,8 @@ Explanation: The first three factorial numbers are less than equal to n but the 
 Constraints:
 1<=n<=1018*/
 
+import java.util.ArrayList;
+
 class Solution {
     static ArrayList<Long> factorialNumbers(long n) {
         ArrayList<Long>arr=new ArrayList<>();
